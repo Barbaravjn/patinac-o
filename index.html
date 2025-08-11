@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competição de Patinação</title>
+</head>
+<body>
+    <script>
+        const competicao = {
+            atletas: [
+                {
+                    nome: "Ana Clara",
+                    categoria: "Iniciante",
+                    idade: 12,
+                    clube: "Spin Masters",
+                    provas_participadas: 5,
+                    medalhas: 2,
+                    penalidades: 0,
+                    pontuacao_total: 150.75,
+                    posicao_competicao: 1
+                },
+                {
+                    nome: "Lucas Silva",
+                    categoria: "Intermediário",
+                    idade: 15,
+                    clube: "Mystic Blades",
+                    provas_participadas: 8,
+                    medalhas: 1,
+                    penalidades: 2,
+                    pontuacao_total: 120.50,
+                    posicao_competicao: 4
+                },
+                {
+                    nome: "Mariana Costa",
+                    categoria: "Avançado",
+                    idade: 17,
+                    clube: "Aurora Glide",
+                    provas_participadas: 10,
+                    medalhas: 5,
+                    penalidades: 1,
+                    pontuacao_total: 185.20,
+                    posicao_competicao: 1
+                },
+                {
+                    nome: "Pedro Alves",
+                    categoria: "Iniciante",
+                    idade: 13,
+                    clube: "Ice Symphony",
+                    provas_participadas: 6,
+                    medalhas: 1,
+                    penalidades: 0,
+                    pontuacao_total: 145.00,
+                    posicao_competicao: 2
+                },
+                {
+                    nome: "Sofia Pereira",
+                    categoria: "Intermediário",
+                    idade: 16,
+                    clube: "Winter Luster",
+                    provas_participadas: 9,
+                    medalhas: 3,
+                    penalidades: 1,
+                    pontuacao_total: 160.90,
+                    posicao_competicao: 2
+                }
+            ]
+        };
+
+        function exibe(){
+            document.write("<table border='1'>");
+            document.write("<tr>");
+            document.write("<td>Nome do Atleta</td>");
+            document.write("<td>Categoria</td>");
+            document.write("<td>Idade</td>");
+            document.write("<td>Clube</td>");
+            document.write("<td>Provas Participadas</td>");
+            document.write("<td>Medalhas</td>");
+            document.write("<td>Penalidades</td>");
+            document.write("<td>Pontuação Total</td>"); 
+            document.write("<td>Posição na Competição</td>");
+            document.write("</tr>");
+
+            for(let i in competicao.atletas){
+                document.write("<tr>");
+                document.write("<td>"+competicao.atletas[i].nome+"</td>");
+                document.write("<td>"+competicao.atletas[i].categoria+"</td>");
+                document.write("<td>"+competicao.atletas[i].idade+"</td>");
+                document.write("<td>"+competicao.atletas[i].clube+"</td>");
+                document.write("<td>"+competicao.atletas[i].provas_participadas+"</td>");
+                document.write("<td>"+competicao.atletas[i].medalhas+"</td>");
+                document.write("<td>"+competicao.atletas[i].penalidades+"</td>");
+                document.write("<td>"+competicao.atletas[i].pontuacao_total+"</td>");
+                document.write("<td>"+competicao.atletas[i].posicao_competicao+"</td>");
+                document.write("</tr>");
+            }
+
+            document.write("</table>");
+        }        
+
+        exibe();
+    </script>
+</body>
+</html>
